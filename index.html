@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTURENT | THE FOOD FUSION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!----- navbar & hero -->
+    <header class="header">
+        
+    <nav >
+        <div class="logo">
+            <h1><i class="fa-solid fa-utensils"></i> Food Fusion</h1>
+        </div>
+
+        <ul id="sub-navBar">
+            <li><a href="index.html" id="colorHome">Home</a></li>
+            <li><a href="About Us/About Us.html">About</a></li>
+            <li><a href="services/services.html">Services</a></li>
+            <li><a href="Menu/menu.html">Menu</a></li>
+            <li><a href="contact/contect.html">contect</a></li>
+            <li class="book_a_table">
+                <a href="" class="nav-item nav-link">Book A Table</a>
+            </li>
+        </ul>
+
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+        </div>
+    </nav>
+
+        <!-- description -->
+        <div class="container">
+            <div class="box box1">
+                <div>
+                    <h1>Enjoy Our Delicious Meal</h1>
+                </div>
+                <div>
+                    <p>At Food Fusion, we offer a delightful mix of flavors and fresh ingredients to create memorable
+                        meals.</p>
+                </div>
+
+                <div class="description_book_a_table">
+                    <a href="" class="nav-itom nav-link active">Book A Table</a>
+                </div>
+            </div>
+            <div class="box animation box2"><video src="vedio/video1.mp4" autoplay loop muted></video></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cardContainer" id="cardContainer1">
+            <!-- <div class="card">
+                <img src="svgs/shef.svg" alt="">
+                <h2>Master Shef</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>-->
+        </div>
+
+        <div class="about-us-section">
+            <div class="image-grid">
+                <img src="imgs/rest_photo1.avif" alt="Image 1">
+                <img src="imgs/rest_photo2.avif" alt="Image 2">
+                <img src="imgs/rest_photo4.avif" alt="Image 3">
+                <img src="imgs/rest_photo3.avif" alt="Image 4">
+            </div>
+            <div class="content">
+                <h1>About Us <img src="svgs/about_line.svg" alt=""></h1>
+                <h2>Welcome to <i class="fa-solid fa-utensils"></i><span> Food Fusion</span></h2>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...Hi this is food fusion resturent.</p>
+                <p>More text about the restaurant...Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...Hi
+                    this is food fusion resturent.Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...Hi this
+                    is food fusion resturent.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 id="experience-count">12</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="chef-count">41</h3>
+                        <p>Popular Master Chefs</p>
+                    </div>
+                </div>
+
+                <a href="/About Us/About Us.html" class="read-more-btn">Read More</a>
+            </div>
+        </div>
+        <!-- ***************** Menu  *********************** -->
+        <div class="menu">
+            <div class="heading-div">
+                <h4>
+                    <img class="svg-icon" src="svgs/about_line.svg" alt="">
+                    Food Menu
+                    <img class="svg-icon" src="svgs/about_line.svg" alt="">
+                </h4>
+                <h1>Most Populer Items</h1>
+            </div>
+            <!-- <div class="sub-heading">
+                <div class="sub-heading1" data-category="burgers">
+                    <img src="svgs/burger.svg" alt="Burger">
+                    Our Signature Burgers
+                </div>
+                <div class="sub-heading1" data-category="pizzas">
+                    <img src="svgs/pizza.svg" alt="">
+                    Fan-Favorite Pizzas
+                </div>
+                <div class="sub-heading1" data-category="softDrinks">
+                    <img src="svgs/softDrink.svg" alt="">
+                    Signature Soft Drinks
+                </div>
+            </div> -->
+            <div class="sub-heading">
+                <div class="sub-heading1" data-category="burgers">
+                    <img src="svgs/burger.svg" alt="Burger">
+                    Our Signature Burgers
+                </div>
+                <div class="sub-heading1 sub-heading2" data-category="pizzas">
+                    <img src="svgs/pizza.svg" alt="Pizza">
+                    Fan-Favorite Pizzas
+                </div>
+                <div class="sub-heading1 sub-heading3" data-category="softDrinks">
+                    <img src="svgs/softDrink.svg" alt="Soft Drink">
+                    Signature Soft Drinks
+                </div>
+            </div>
+
+            <!--***************************** Menu container ************************-->
+            <div class="menu-container">
+                <!-- <div class="menu-card">
+                    <img src="imgs/image1.webp" alt="Pappardelle" class="food-img">
+                    <div class="menu-info">
+                        <h3>Pappardelle</h3>
+                        <p>With Vegetables</p>
+                        <p class="price">$35.00</p>
+                    </div>
+                    <div class="cart-icon">
+                        <img src="svgs/orderMenu.svg" alt="Add to cart">
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+
+        <!------------------------------------ style2.css -------------------------->
+        <!----------------------------------- book table ------------------------------->
+        <div id="detail">
+            <div id="box1">
+                <video id="video1" src="vedio/video1.mp4"></video>
+                <button class="play-button" id="playButton"></button>
+            </div>
+            <div id="box2">
+                <h3>Reservation----</h3>
+                <h1 style="color: white;"> Book A Table Online</h1>
+                <form action="/abc.java" method="get">
+                    <input class="Textarea" type="text" placeholder="Your Name">
+                    <input class="Textarea" type="email" placeholder="Your Email">
+                    <input class="Textarea" type="datetime-local" placeholder="Date & Time">
+                    <select class="Textarea">
+                        <option>Number of Persons</option>
+                        <option>People 1</option>
+                        <option>People 2</option>
+                        <option>People 3</option>
+                        <option>People 4</option>
+                    </select><br>
+                </form>
+                <input id="Button" type="submit" value="Book A Table">
+            </div>
+        </div>
+
+        <!-- master shefs -->
+        <div id="shef">
+            <div class="sheff_heading">
+                <h4>
+                    <img class="svg-icon" src="svgs/about_line.svg" alt="">
+                    Team Members
+                    <img class="svg-icon" src="svgs/about_line.svg" alt="">
+                </h4>
+                <h1>Our Master Shefs</h1>
+            </div>
+            <div class="sheff-container" id="sheff-container1">
+                <!-- <div class="sheff-card" >
+                    <img src="imgs/sheff1.webp" alt="Pappardelle" class="sheff-img">
+                    <div class="sheff-info">
+                        <h3>Master Shef</h3>
+                        <p>M Junaid</p>
+                    </div>
+                </div> 
+                -->
+            </div>
+        </div>
+ 
+
+        <div class="container-clients">
+            <div class="section-header">
+                <h2>Our Clients Say!!!</h2>
+                <p>Client Testimonials</p>
+            </div>
+            <div class="feedback-carousel">
+                <div class="feedback-row">
+                    <div class="feedback-card">
+                        <div class="quote-icon">“</div>
+                        <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="client-info">
+                            <img src="imgs/sheff4.webp" alt="Client 1" class="client-img">
+                            <div>
+                                <p class="client-name">Client 1</p>
+                                <p class="client-role">Profession 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="feedback-card">
+                        <div class="quote-icon">“</div>
+                        <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="client-info">
+                            <img src="imgs/sheff1.webp" alt="Client 2" class="client-img">
+                            <div>
+                                <p class="client-name">Client 2</p>
+                                <p class="client-role">Profession 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="quote-icon">“</div>
+                        <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="client-info">
+                            <img src="imgs/sheff2.webp" alt="Client 3" class="client-img">
+                            <div>
+                                <p class="client-name">Client 3</p>
+                                <p class="client-role">Profession 3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="quote-icon">“</div>
+                        <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="client-info">
+                            <img src="imgs/sheff3.webp" alt="Client 4" class="client-img">
+                            <div>
+                                <p class="client-name">Client 4</p>
+                                <p class="client-role">Profession 4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="quote-icon">“</div>
+                        <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="client-info">
+                            <img src="imgs/sheff4.webp" alt="Client 5" class="client-img">
+                            <div>
+                                <p class="client-name">Client 5</p>
+                                <p class="client-role">Profession 5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="quote-icon">“</div>
+                        <p class="feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="client-info">
+                            <img src="imgs/sheff1.webp" alt="Client 1" class="client-img">
+                            <div>
+                                <p class="client-name">Client 6</p>
+                                <p class="client-role">Profession 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_start">
+            <ul class="list">
+                <p>Company</p>
+                <a><i class="fa-solid fa-caret-right"></i> About Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Contact Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Reservation</a>
+                <a><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                <a><i class="fa-solid fa-caret-right"></i> Terms & Condition</a>
+            </ul>
+            <ul class="list">
+                <p>Contact</p>
+                <a><i class="fa-solid fa-location-dot"></i> 123 Street, USA</a>
+                <a><i class="fa-solid fa-phone"></i>+012 345 76890</a>
+                <a><i class="fa-solid fa-envelope"></i> info@example.com</a><br>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </ul>
+            <ul class="list">
+                <p>Opening</p>
+                <a>Monday - Saturday</a>
+                <a>09AM - 09PM</a>
+                <br>
+                <a> Sunday</a>
+                <a>10AM - 08PM</a>
+            </ul>
+            <ul class="list list-end">
+                <p>Newsletter</p>
+                <h4>Please put your emails for any query of hotel.</h4>
+                <form action="#">
+                    <input type="email" placeholder="Your email" required><button>Sign Up</button>
+                </form>
+            </ul>
+        </div>
+        <div id="panel">
+            <p class="underline">Your Site Name</p>
+            <p>.<i class="fa-solid fa-copyright"></i>All Right Reserved.</p>
+            <p class="underline">Desined By Leader's Group</p>
+            <a>Home</a>
+            <a>Cookies</a>
+            <a>Help</a>
+            <a>FaQs</a>
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script src="script.js"></script>
+    <script src="loading.js"></script>
+    <script type="module" src="mainMenu.js"></script>
+    <script src="about_main.js"></script>
+
+</body>
+
+</html>

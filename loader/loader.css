@@ -1,0 +1,64 @@
+/* Center the circle wrapper */
+.circle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    position: relative;
+}
+
+/* Base styling for all the circles */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #3498db;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite, pulse 2s ease-in-out infinite;
+}
+
+/* Creating staggered animations for each circle using nth-child */
+.circle:nth-child(1) {
+    animation-delay: 0s;
+    border-top-color: #3498db;
+}
+.circle:nth-child(2) {
+    animation-delay: 0.5s;
+    border-top-color: #e74c3c;
+}
+.circle:nth-child(3) {
+    animation-delay: 1s;
+    border-top-color: #f1c40f;
+}
+.circle:nth-child(4) {
+    animation-delay: 1.5s;
+    border-top-color: #9b59b6;
+}
+
+/* Spin animation for the circles */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulse effect: Circles grow and shrink */
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}

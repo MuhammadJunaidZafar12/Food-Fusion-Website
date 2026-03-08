@@ -1,0 +1,589 @@
+/* *************************** Master Sheffs *************************/
+
+/* Heading container */
+
+.sheff_heading {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(30px); /* Initially moved down */
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out; /* Smooth transition */
+}
+
+/* When heading-div comes into view */
+.sheff_heading.in-view4 {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
+}
+
+/* H4 styles */
+.sheff_heading h4 {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between the SVGs and text */
+  color: #ff7c01;
+  opacity: 0; /* Initially hidden */
+  animation: fade-in 0.6s ease-out forwards; /* Fade in with animation */
+  animation-delay: 0.3s; /* Delay for smoother effect */
+}
+
+/* H1 styles */
+.sheff_heading h1 {
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  margin: 20px 0 35px 0;
+  text-transform: uppercase;
+  opacity: 0; /* Initially hidden */
+  animation: fade-in 0.8s ease-out forwards; /* Fade in with animation */
+  animation-delay: 0.6s; /* Delay after H4 */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.sheff-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between each card */
+  padding-bottom: 80px;
+  /* margin-top: 50px; */
+}
+
+.sheff-card {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(100px); /* Start off-screen at the bottom */
+  transition:
+    transform 0.5s ease-out,
+    opacity 0.5s ease-out; /* Animation */
+}
+
+.sheff-card.in-view3 {
+  opacity: 1; /* Become visible */
+  transform: translateY(0); /* Move to the original position */
+}
+
+/* On hover, card scales slightly */
+.sheff-card:hover {
+  transform: scale(1.05);
+}
+
+/* Food image in the card */
+.sheff-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Menu item info styles */
+.sheff-info h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.sheff-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/******************************************** book a table  **********************************/
+
+#detail {
+  display: flex;
+  justify-content: center;
+  height: 320px;
+}
+
+#box1 {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+#detail #box1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: url("svgs/play.svg") no-repeat center center;
+  background-size: 50%; /* Adjust the size of the icon */
+  border: 2px solid #ff7c01; /* Add a white border */
+  border-radius: 50%; /* Make the button circular */
+  background-color: #ff7c01; /* Optional: Add semi-transparent background */
+  cursor: pointer;
+  z-index: 1;
+  padding: 0; /* No padding to prevent overflow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
+  outline: none; /* Remove default outline */
+  display: block; /* Initially show the play button */
+}
+
+#detail #box2 {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  border: 2px solid #14243b;
+  background-color: #14243b;
+}
+
+#detail #box2 h3 {
+  color: #ff7c01;
+  text-align: start;
+  padding-left: 20px;
+  font-style: oblique;
+}
+
+#detail #box2 form select {
+  width: 35%;
+}
+
+#detail #box2 form input {
+  margin: 5px;
+  /* height: 20%; */
+}
+
+#detail #box2 form .Textarea {
+  width: 30%;
+  height: 6vh;
+  text-align: center;
+  margin: 10px;
+}
+
+#detail #box2 #Button {
+  width: 40%;
+  height: 6vh;
+  background-color: #ff7c01;
+  border-radius: 5px;
+  color: white;
+}
+
+@media (max-width: 400px) {
+}
+
+/* ****************************view of clients**************************** */
+
+/* Container */
+/* 
+.container-clients {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+Section Header 
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 16px;
+    color: #777;
+}
+
+Feedback Cards 
+.feedback-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+Individual Feedback Card 
+.feedback-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+Quote Icon
+.quote-icon {
+    font-size: 40px;
+    color: #ff7c01;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-weight: bold;
+}
+
+Feedback Text 
+.feedback-text {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+Client Info 
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.client-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ff7c01;
+}
+
+.client-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.client-role {
+    font-size: 14px;
+    color: #777;
+} */
+
+.container-clients {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Feedback Carousel */
+.feedback-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Feedback Cards Row */
+.feedback-row {
+  display: flex;
+  transition: transform 1s ease-in;
+}
+
+/* Individual Feedback Card */
+.feedback-card {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 33.33%; /*Each card takes up 33.33% so three fit into one row*/
+  height: 300px;
+  margin: 0 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.feedback-card:hover {
+  background-color: #ffaf01;
+}
+
+.quote-icon {
+  font-size: 40px;
+  color: #ff7c01;
+  font-weight: bold;
+}
+
+.feedback-text {
+  font-size: 16px;
+  color: #555;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff7c01;
+}
+
+.client-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.client-role {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-card {
+    width: 100%;
+  }
+}
+
+/******************************** footer **************************************/
+
+.footer_start {
+  background-color: #222f3d;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_start .list p {
+  color: orange;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+  margin-top: 30px;
+}
+
+.footer_start .list a {
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #dddddd;
+}
+
+.list-end form input {
+  height: 35px;
+  text-align: center;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-top: 20px;
+}
+
+.list-end form button {
+  height: 37px;
+  width: 60px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.list i {
+  color: white;
+  padding-right: 8px;
+}
+
+.list h4 {
+  padding-top: 10px;
+}
+
+#panel {
+  min-height: 50px;
+  background-color: rgb(3, 3, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#panel i {
+  color: white;
+  padding-right: 0 5px;
+}
+
+#panel a {
+  color: #dddddd;
+  margin: 0px 5px 0px 150px;
+}
+
+#panel p1 {
+  color: #dddddd;
+  text-decoration: underline;
+  /* margin-top: 15px; */
+  /* margin-left: 60px; */
+}
+
+#panel p3 {
+  color: #dddddd;
+  text-decoration: underline;
+  /* margin-top: 15px; */
+}
+
+#panel p {
+  color: #dddddd;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 3px;
+}
+
+#panel .underline {
+  color: #dddddd;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .sheff-container {
+    gap: 20px;
+  }
+
+  .sheff-card {
+    width: 220px;
+  }
+
+  .feedback-card {
+    width: 45%; /* Make cards bigger on medium screens */
+  }
+
+  #detail {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #box1,
+  #box2 {
+    width: 100%;
+    height: auto;
+  }
+
+  #detail #box1 video {
+    height: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sheff-container {
+    gap: 15px;
+  }
+
+  .sheff-card {
+    width: 200px;
+  }
+
+  .feedback-card {
+    width: 100%; /* Stack the feedback cards vertically on smaller screens */
+  }
+
+  #detail #box2 form select {
+    width: 50%;
+  }
+
+  #detail #box2 form .Textarea {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sheff-card {
+    width: 100%;
+  }
+
+  .sheff-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  #detail #box1 video {
+    height: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_start {
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+  }
+
+  .footer_start .list a {
+    font-size: 14px;
+  }
+
+  #panel {
+    flex-direction: column;
+    align-items: start;
+  }
+  #panel a {
+    display: flex;
+    margin: 0 20px;
+  }
+}

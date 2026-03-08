@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ccentect.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Contect</title>
+</head>
+
+<body>
+
+    <header>
+        <nav >
+            <div class="logo">
+                <h1><i class="fa-solid fa-utensils"></i> Food Fusion</h1>
+            </div>
+    
+            <ul id="sub-navBar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/About Us/About Us.html">About</a></li>
+                <li><a href="/services/services.html">Services</a></li>
+                <li><a href="/Menu/menu.html">Menu</a></li>
+                <li><a href="/contact/contect.html" id="colorHome">contect</a></li>
+                <li class="book_a_table">
+                    <a href="Booking/Booking.html" class="nav-item nav-link">Book A Table</a>
+                </li>
+            </ul>
+    
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="About">
+            <p>Contact</p>
+        </div>
+
+        <div class="heading-div">
+            <h4>
+                <img class="svg-icon" src="/svgs/about_line.svg" alt="">
+                Contact Us
+                <img class="svg-icon" src="/svgs/about_line.svg" alt="">
+            </h4>
+            <h1>Contact For Any Query</h1>
+        </div>
+
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <!-- <h2 class="contact-heading">Get in Touch</h2>
+                <p class="contact-description">We'd love to hear from you! Whether you have a question about the menu, services, or anything else, our team is ready to answer all your queries.</p> -->
+        
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <ul class="info-list">
+                            <li>
+                                <img src="location.svg" alt="Location icon">
+                                <span>123 Foodie Street, Flavor Town, USA</span>
+                            </li>
+                            <li>
+                                <img src="/svgs/phone.svg" alt="Phone icon">
+                                <span>Main Line: +1 234 567 890</span>
+                            </li>
+                            <li>
+                                <img src="/svgs/phone.svg" alt="Phone icon">
+                                <span>Support Line: +1 234 567 891</span>
+                            </li>
+                            <li>
+                                <img src="/svgs/email.svg" alt="Email icon">
+                                <span>Email: info@foodcorner.com</span>
+                            </li>
+                            <li>
+                                <img src="/svgs/clock.svg" alt="Clock icon">
+                                <span>Working Hours: Mon-Sun, 9:00 AM - 11:00 PM</span>
+                            </li>
+                            <li>
+                                <img src="/svgs/support.svg" alt="Support icon">
+                                <span>24/7 Online Support</span>
+                            </li>
+                        </ul>
+        
+                        <div class="social-media">
+                            <h4>Follow Us</h4>
+                            <a href="#" class="social-link">
+                                <img src="/svgs/facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="/svgs/instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="/svgs/twitter.svg" alt="Twitter">
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="contact-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer_start">
+            <ul class="list">
+                <p>Company</p>
+                <a><i class="fa-solid fa-caret-right"></i> About Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Contact Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Reservation</a>
+                <a><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                <a><i class="fa-solid fa-caret-right"></i> Terms & Condition</a>
+            </ul>
+            <ul class="list">
+                <p>Contact</p>
+                <a><i class="fa-solid fa-location-dot"></i> 123 Street, USA</a>
+                <a><i class="fa-solid fa-phone"></i>+012 345 76890</a>
+                <a><i class="fa-solid fa-envelope"></i> info@example.com</a><br>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </ul>
+            <ul class="list">
+                <p>Opening</p>
+                <a>Monday - Saturday</a>
+                <a>09AM - 09PM</a>
+                <br>
+                <a> Sunday</a>
+                <a>10AM - 08PM</a>
+            </ul>
+            <ul class="list list-end">
+                <p>Newsletter</p>
+                <h4>Please put your emails for any query of hotel.</h4>
+                <form action="#">
+                    <input type="email" placeholder="Your email" required><button>Sign Up</button>
+                </form>
+            </ul>
+        </div>
+        <div id="panel">
+            <p class="underline">Your Site Name</p>
+            <p>.<i class="fa-solid fa-copyright"></i>All Right Reserved.</p>
+            <p class="underline">Desined By Leader's Group</p>
+            <a>Home</a>
+            <a>Cookies</a>
+            <a>Help</a>
+            <a>FaQs</a>
+        </div>
+    </footer>
+
+    <script src="/navbar.js"></script>
+    <script src="contect.js"></script>
+
+</body>
+
+</html>

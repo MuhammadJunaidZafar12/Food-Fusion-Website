@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu</title>
+</head>
+
+<body>
+    <header>
+        <nav >
+            <div class="logo">
+                <h1><i class="fa-solid fa-utensils"></i> Food Fusion</h1>
+            </div>
+    
+            <ul id="sub-navBar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/About Us/About Us.html">About</a></li>
+                <li><a href="/services/services.html">Services</a></li>
+                <li><a href="/Menu/menu.html" id="colorHome">Menu</a></li>
+                <li><a href="/contact/contect.html" >contect</a></li>
+                <li class="book_a_table">
+                    <a href="Booking/Booking.html" class="nav-item nav-link">Book A Table</a>
+                </li>
+            </ul>
+    
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- file use mainManu.js also -->
+    <main>
+        <div id="About">
+            <p>Delicious Menu</p>
+        </div>
+
+        <div class="menu">
+            <div class="heading-div">
+                <h4>
+                    <img class="svg-icon" src="svgs/about_line.svg" alt="">
+                    Food Menu
+                    <img class="svg-icon" src="svgs/about_line.svg" alt="">
+                </h4>
+                <h1>Most Populer Items</h1>
+            </div>
+            <!-- <div class="sub-heading">
+                <div class="sub-heading1" data-category="burgers">
+                    <img src="svgs/burger.svg" alt="Burger">
+                    Our Signature Burgers
+                </div>
+                <div class="sub-heading1" data-category="pizzas">
+                    <img src="svgs/pizza.svg" alt="">
+                    Fan-Favorite Pizzas
+                </div>
+                <div class="sub-heading1" data-category="softDrinks">
+                    <img src="svgs/softDrink.svg" alt="">
+                    Signature Soft Drinks
+                </div>
+            </div> -->
+            <div class="sub-heading">
+                <div class="sub-heading1" data-category="burgers">
+                    <img src="/svgs/burger.svg" alt="Burger">
+                    Our Signature Burgers
+                </div>
+                <div class="sub-heading1" data-category="pizzas">
+                    <img src="/svgs/pizza.svg" alt="Pizza">
+                    Fan-Favorite Pizzas
+                </div>
+                <div class="sub-heading1" data-category="softDrinks">
+                    <img src="/svgs/softDrink.svg" alt="Soft Drink">
+                    Signature Soft Drinks
+                </div>
+            </div> 
+            
+            
+
+            <!--***************************** Menu container ************************-->
+            <div class="menu-container">
+                <!-- <div class="menu-card">
+                    <img src="imgs/image1.webp" alt="Pappardelle" class="food-img">
+                    <div class="menu-info">
+                        <h3>Pappardelle</h3>
+                        <p>With Vegetables</p>
+                        <p class="price">$35.00</p>
+                    </div>
+                    <div class="cart-icon">
+                        <img src="svgs/orderMenu.svg" alt="Add to cart">
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_start">
+            <ul class="list">
+                <p>Company</p>
+                <a><i class="fa-solid fa-caret-right"></i> About Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Contact Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Reservation</a>
+                <a><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                <a><i class="fa-solid fa-caret-right"></i> Terms & Condition</a>
+            </ul>
+            <ul class="list">
+                <p>Contact</p>
+                <a><i class="fa-solid fa-location-dot"></i> 123 Street, USA</a>
+                <a><i class="fa-solid fa-phone"></i>+012 345 76890</a>
+                <a><i class="fa-solid fa-envelope"></i> info@example.com</a><br>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </ul>
+            <ul class="list">
+                <p>Opening</p>
+                <a>Monday - Saturday</a>
+                <a>09AM - 09PM</a>
+                <br>
+                <a> Sunday</a>
+                <a>10AM - 08PM</a>
+            </ul>
+            <ul class="list list-end">
+                <p>Newsletter</p>
+                <h4>Please put your emails for any query of hotel.</h4>
+                <form action="#">
+                    <input type="email" placeholder="Your email" required><button>Sign Up</button>
+                </form>
+            </ul>
+        </div>
+        <div id="panel">
+            <p class="underline">Your Site Name</p>
+            <p>.<i class="fa-solid fa-copyright"></i>All Right Reserved.</p>
+            <p class="underline">Desined By Leader's Group</p>
+            <a>Home</a>
+            <a>Cookies</a>
+            <a>Help</a>
+            <a>FaQs</a>
+        </div>
+    </footer>
+
+
+    <script src="/navbar.js"></script>
+    <script src="menu.js"></script>
+    <!-- <script src="/mainMenu.js"></script> -->
+</body>
+
+</html>

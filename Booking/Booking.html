@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Booking.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/navbar.js">
+    <title>Booking A Table</title>
+</head>
+
+<body>
+
+    <nav >
+        <div class="logo">
+            <h1><i class="fa-solid fa-utensils"></i> Food Fusion</h1>
+        </div>
+
+        <ul id="sub-navBar">
+            <li><a href="/index.html" id="colorHome">Home</a></li>
+            <li><a href="/About Us/About Us.html">About</a></li>
+            <li><a href="/services/services.html">Services</a></li>
+            <li><a href="/Menu/menu.html">Menu</a></li>
+            <li><a href="/contact/contect.html">contect</a></li>
+            <li class="book_a_table">
+                <a href="Booking/Booking.html" class="nav-item nav-link">Book A Table</a>
+            </li>
+        </ul>
+
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+        </div>
+    </nav>
+    
+    <div id="First">
+        <p>Booking</p>
+    </div>
+    <div id="detail">
+        <div id="box1" >
+            <video src="/vedio/video1.mp4" autoplay loop controls></video>
+        </div>
+        <div id="box2">
+            <h3>Reservation----</h3>
+            <h1 style="color: white;"> Book A Table Online</h1>
+            <form action="/abc.java" method="get">
+                <input class="Textarea" type="text" placeholder="Your Name">
+                <input class="Textarea" type="email" placeholder="Your Email">
+                <input class="Textarea" type="datetime-local" placeholder="Date & Time">
+                <select class="Textarea">
+                    <option>People 1</option>
+                    <option>People 2</option>
+                    <option>People 3</option>
+                    <option>People 4</option>
+                </select><br>
+                <input id="Button" type="submit" value="Book A Table">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

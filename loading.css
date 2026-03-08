@@ -1,0 +1,42 @@
+/* #preloader{
+    background: #000 url(imgs/circle-loader.gif) no-repeat center center;
+    background-size: 7%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+} */
+
+/* Preloader full-screen style */
+#preloader {
+    background-color: white; /* White background for preloader */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Loader animation style */
+.loader {
+    border: 8px solid #f3f3f3; /* Light gray border for background */
+    border-top: 8px solid yellow; /* Yellow color for the rotating section */
+    border-radius: 50%; /* Make it a circle */
+    width: 80px; /* Adjust the size */
+    height: 80px;
+    animation: spin 1.2s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a professional look */
+}
+
+/* Spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* When content is shown, preloader is hidden */
+#content {
+    display: block;
+}

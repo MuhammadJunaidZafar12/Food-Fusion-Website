@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="About Us.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us</title>
+</head>
+
+<body>
+    <header>
+        <nav >
+            <div class="logo">
+                <h1><i class="fa-solid fa-utensils"></i> Food Fusion</h1>
+            </div>
+    
+            <ul id="sub-navBar">
+                <li><a href="/index.html" >Home</a></li>
+                <li><a href="About Us.css" id="colorHome">About</a></li>
+                <li><a href="/services/services.html">Services</a></li>
+                <li><a href="/Menu/menu.html">Menu</a></li>
+                <li><a href="/contact/contect.html">contect</a></li>
+                <li class="book_a_table">
+                    <a href="Booking/Booking.html" class="nav-item nav-link">Book A Table</a>
+                </li>
+            </ul>
+    
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div id="About">
+            <p>About Us</p>
+        </div>
+
+        <div class="about-us-section">
+            <div class="image-grid">
+                <img src="rest_photo1.avif" alt="Image 1">
+                <img src="rest_photo2.avif" alt="Image 2">
+                <img src="rest_photo4.avif" alt="Image 3">
+                <img src="rest_photo3.avif" alt="Image 4">
+            </div>
+            <div class="content">
+                <h1>About Us <img src="about_line.svg" alt=""></h1>
+                <h2>Welcome to <i class="fa-solid fa-utensils"></i><span> Food Fusion</span></h2>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...Hi this is food fusion resturent.</p>
+                <p>More text about the restaurant...Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...Hi
+                    this is food fusion resturent.Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...Hi this
+                    is food fusion resturent.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 id="experience-count">12</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="chef-count">41</h3>
+                        <p>Popular Master Chefs</p>
+                    </div>
+                </div>
+
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+        </div>
+
+        <!-- master shefs -->
+        <div id="shef">
+            <div class="sheff_heading">
+                <h4>
+                    <img class="svg-icon" src="about_line.svg" alt="">
+                    Team Members
+                    <img class="svg-icon" src="about_line.svg" alt="">
+                </h4>
+                <h1>Our Master Shefs</h1>
+            </div>
+            <div class="sheff-container" id="sheff-container1">
+                <!-- <div class="sheff-card" >
+                <img src="imgs/sheff1.webp" alt="Pappardelle" class="sheff-img">
+                <div class="sheff-info">
+                    <h3>Master Shef</h3>
+                    <p>M Junaid</p>
+                </div>
+            </div> 
+            -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_start">
+            <ul class="list">
+                <p>Company</p>
+                <a><i class="fa-solid fa-caret-right"></i> About Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Contact Us</a>
+                <a><i class="fa-solid fa-caret-right"></i> Reservation</a>
+                <a><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                <a><i class="fa-solid fa-caret-right"></i> Terms & Condition</a>
+            </ul>
+            <ul class="list">
+                <p>Contact</p>
+                <a><i class="fa-solid fa-location-dot"></i> 123 Street, USA</a>
+                <a><i class="fa-solid fa-phone"></i>+012 345 76890</a>
+                <a><i class="fa-solid fa-envelope"></i> info@example.com</a><br>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </ul>
+            <ul class="list">
+                <p>Opening</p>
+                <a>Monday - Saturday</a>
+                <a>09AM - 09PM</a>
+                <br>
+                <a> Sunday</a>
+                <a>10AM - 08PM</a>
+            </ul>
+            <ul class="list list-end">
+                <p>Newsletter</p>
+                <h4>Please put your emails for any query of hotel.</h4>
+                <form action="#">
+                    <input type="email" placeholder="Your email" required><button>Sign Up</button>
+                </form>
+            </ul>
+        </div>
+        <div id="panel">
+            <p class="underline">Your Site Name</p>
+            <p>.<i class="fa-solid fa-copyright"></i>All Right Reserved.</p>
+            <p class="underline">Desined By Leader's Group</p>
+            <a>Home</a>
+            <a>Cookies</a>
+            <a>Help</a>
+            <a>FaQs</a>
+        </div>
+    </footer>
+
+
+    <script src="/navbar.js"></script>
+    <script src="AboutUS.js"></script>
+</body>
+
+</html>

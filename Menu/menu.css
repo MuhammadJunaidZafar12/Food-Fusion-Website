@@ -1,0 +1,344 @@
+ /* navbar */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+body{
+    color: white;  
+    /* padding-top: 70px;  */
+    /* background-color: whitesmoke; */
+    width: 100%;
+}
+
+
+.flex{
+    display: flex;
+}
+
+
+#About {
+    /* background-image: url(Ab.jpeg); */
+    background-color: #222831;
+    margin-top: 70px;
+    padding: 0;
+    height: 350px;
+    /* width: 100vw; */
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+#About p{
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**************************** Menu section **************************/
+
+/*  */
+.menu {
+    color: black;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+/* Heading container */
+.heading-div {
+    text-align: center;
+    /* margin-bottom: 10px; */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Start off-screen at the bottom */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Animation */
+}
+
+/* When heading-div comes into view */
+.heading-div.in-view {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+/* Styling for h4 (with SVG icons before and after) */
+.heading-div h4 {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between the SVGs and text */
+    color: #ff7c01;
+    position: relative;
+}
+
+/* Style for SVG icons */
+.svg-icon {
+    width: 70px; /*Control the size of the SVGs*/
+    height: 2px;
+    object-fit: cover;
+}
+
+.heading-div h1 {
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* *********************** Sub Heading ****************************** */
+.sub-heading {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    gap: 30px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Start off-screen at the bottom */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Animation */
+}
+
+/* When sub-heading comes into view */
+.sub-heading.in-view {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Move to original position */
+}
+.sub-heading1 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the image and text */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ffffffc9;
+    transition: border-color 0.3s ease;
+}
+
+.sub-heading1 img {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px;
+}
+
+.sub-heading1 img:hover {
+    transform: scale(1.1); /* Scales up the image slightly on hover */
+    transition: transform 0.3s ease; /* Adds smooth transition to hover effect */
+}
+
+
+/*************************** menu container  ***************************/
+
+/* Container for all menu cards */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between each card */
+    padding: 50px;
+}
+
+/* Menu card styles */
+.menu-card {
+    /* cursor: pointer; */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+    opacity: 0; /* Start with hidden */
+    transform: translateY(100px); /* Start off-screen at the bottom */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.menu-card.in-view {
+    opacity: 1; /* Become visible */
+    transform: translateY(0); /* Move to the original position */
+}
+
+/* On hover, card scales slightly */
+.menu-card:hover {
+    transform: translateY(0) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Define keyframe animation for smooth slide-up */
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Food image in the card */
+.food-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Menu item info styles */
+.menu-info h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.menu-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Price style */
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Cart icon */
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cart-icon img {
+    fill: #ffaf01;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Add this CSS rule for the active heading */
+.active-heading {
+    border-bottom: 3px solid #ff7c01; /* Underline style */
+    color: #ff7c01; /* Optional: change the text color */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+
+/* footer  */
+
+.footer_start {
+    /* margin-top: 100%; */
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_start .list p {
+    color: orange;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list{
+    margin-top: 30px;
+}
+
+.footer_start .list a {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.list-end form input {
+    height: 35px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-top: 20px;
+}
+
+
+
+.list-end form button {
+    height: 37px;
+    width: 60px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.list i {
+    color: white;
+    padding-right: 8px;
+}
+
+.list h4{
+    padding-top: 10px;
+}
+
+
+#panel {
+    height: 50px;
+    background-color: rgb(3, 3, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel i {
+    color: white;
+    padding-right: 0 5px;
+}
+
+#panel a {
+    color: #dddddd;
+    margin: 0px 5px 0px 150px;
+}
+
+#panel p1 {
+    color: #dddddd;
+    text-decoration: underline;
+    /* margin-top: 15px; */
+    /* margin-left: 60px; */
+}
+
+#panel p3 {
+    color: #dddddd;
+    text-decoration: underline;
+    /* margin-top: 15px; */
+}
+
+#panel p {
+    color: #dddddd;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 3px;
+}
+
+#panel .underline {
+    color: #dddddd;
+    text-decoration: underline;
+    margin-left: 5px;
+}
